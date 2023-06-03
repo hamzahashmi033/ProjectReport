@@ -1,0 +1,28 @@
+Material Required
+The components we require to make this project are: -
+
+ESP32 Development Board - this is the main component that will be used to control the LED lights through the webserver.
+LED Lights - you can use any type of LED depending on your project requirements. We have used 2x 5mm LEDs for this project.
+Breadboard - this will be used to connect the LED lights to the ESP32 microcontroller.
+Jumper wires - these will be used to connect the breadboard to the ESP32 microcontroller and the LED lights.
+USB Cable - to connect the ESP32 Development Board to your computer for programming.
+Computer - to program and upload the code to the ESP32 Development Board.
+Resistor - to limit the current going through the LED lights and prevent them from burning out.
+
+Working of ESP32 LED WebServer
+The project works by creating a web server on the ESP32 microcontroller that serves a web page to a client device, such as a computer or mobile phone, over Wi-Fi. The web page contains controls that allow you to turn the LED lights on or off.
+
+Here's a step-by-step breakdown of how the ESP32 LED webserver project works:
+
+The ESP32 microcontroller is connected to the LED lights and programmed to serve as a web server.The web server code is uploaded to the ESP32 using the Arduino IDE or other programming tools.
+The ESP32 is connected to a Wi-Fi network, allowing it to communicate with client devices over the network. When a client device connects to the ESP32's IP address, the web server code serves a web page to the client device's web browser.
+The web page contains controls for the LED lights, allowing the user to turn them on or off. When the user interacts with the controls on the web page, the ESP32 microcontroller receives the command and adjusts the LED lights accordingly.
+The ESP32 sends a response back to the client device, updating the web page with the current state of the LED lights.
+
+
+Working A/C to Cicuit Diagram:
+The ESP32 microcontroller has many GPIO pins that can be used for interfacing with external devices, such as LED lights. In this example, we will interface the ESP32 with two LED lights connected to GPIO pins 12 and 14.
+Here's how to interface the ESP32 with two LED lights:
+Connect one end of a 220-ohm resistor to GPIO pin 12 on the ESP32, and connect the other end of the resistor to the positive (anode) leg of one LED light.
+Connect the negative (cathode) leg of the LED light to the ground (GND) on the ESP32.
+Repeat steps 1 and 2 for GPIO pin 14 and the other LED light.
